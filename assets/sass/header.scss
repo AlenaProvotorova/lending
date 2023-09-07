@@ -37,9 +37,14 @@
     }
 }
 
+.header__link_active {
+    color: red
+}
+
 .header__cart {
     width: 56px;
     height: 56px;
+    min-width: 56px;
     border-radius: 50px;
     background-color: $white;
     background-image: url('../icons/cart.png');
@@ -51,13 +56,6 @@
     &:hover {
         box-shadow: 0px 0px 10px 0px rgba(107, 115, 123, 0.50);
     }
-}
-
-.header-content {
-    max-width: 1240px;
-    margin: 0 auto 0;
-    padding: 123px 100px 131px;
-    position: relative;
 }
 
 .header-content__image {
@@ -73,12 +71,18 @@
     transform: translateY(123px);
 }
 
+.header-content {
+    max-width: 1240px;
+    margin: 0 auto 0;
+    padding: 123px 100px 131px;
+    position: relative;
+}
+
 .header-content__title {
     z-index: 12;
     position: relative;
     font-size: 8vw;
     line-height: 9vw;
-    font-weight: 800;
 }
 
 .header-content__text {
@@ -86,20 +90,20 @@
     margin: 30px 0 60px;
 }
 
-@mixin btn($color, $padding) {
-    padding: $padding;
-    background-color: $color;
-    color: $white;
-
-    &:hover {
-        text-decoration: underline;
-    }
+@mixin button($bgColor, $color: gray, $fs){
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border: 1px solid $darkBlack;
+    background-color: $bgColor;
+    color: $color;
+    font-weight: 900;
+    font-size: $fs;
 }
 
 .btn1 {
-    @include btn(red, 10px)
+   @include button(red, green, 20px)
 }
 
 .btn2 {
-    @include btn(blue, 30px)
+    @include button(yellow, black, 55px)
 }

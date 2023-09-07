@@ -3,7 +3,8 @@
     background-color: $darkBlack;
     color: $white;
     transition: 0.3s;
-
+    white-space: nowrap;
+    
     &:hover {
         background-color: $white;
         color: $darkBlack;
@@ -14,6 +15,7 @@
 %button_secondary {
     border-radius: 126px;
     text-decoration: underline;
+    white-space: nowrap;
     transition: 0.3s;
 
     &:hover {

@@ -16,10 +16,11 @@ html {
 *, 
 *:after,
 *:before {
-margin: 0;
-padding: 0;
-box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
+
 
 ul {
     list-style: none;
@@ -40,5 +41,11 @@ button {
 
 a {
     text-decoration: none;
-    color: $darkBlack
+    color: black
+}
+
+section {
+    background: linear-gradient(173deg, #FFF 0%, #FFF 0%, rgba(243, 244, 245, 0.20) 11.74%, #F3F4F5 27.92%, rgba(243, 244, 245, 0.00) 44.79%, rgba(243, 244, 245, 0.68) 60.42%, #F3F4F5 79.17%, #FFF 100%);
+    //TODO check height
+    height: 2000px;
 }
