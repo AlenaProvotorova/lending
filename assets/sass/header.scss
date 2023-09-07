@@ -1,0 +1,105 @@
+.header {
+    background-color: $lightGray;
+    padding-top: 24px;
+}
+
+.header-top {
+    max-width: 1240px;
+    padding: 0 100px;
+    width: 100%;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 126px;
+    height: 50px;
+    background: url('../img/logo.png') no-repeat;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    display: block;
+    border-radius: 50px;
+    padding: 8px;
+    margin-left: 8px;
+    transition: 0.3s;
+    
+    &:hover {
+        background-color: $white;
+        box-shadow: 0px 0px 10px 0px rgba(107, 115, 123, 0.50);
+    }
+}
+
+.header__cart {
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    background-color: $white;
+    background-image: url('../icons/cart.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 20px 0 32px;
+    transition: 0.3s;
+    
+    &:hover {
+        box-shadow: 0px 0px 10px 0px rgba(107, 115, 123, 0.50);
+    }
+}
+
+.header-content {
+    max-width: 1240px;
+    margin: 0 auto 0;
+    padding: 123px 100px 131px;
+    position: relative;
+}
+
+.header-content__image {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    bottom: 0;
+    background-size: contain;
+    background-image: url('../img/cup.png');
+    background-repeat: no-repeat;
+    width: 35vw;
+    z-index: 1;
+    transform: translateY(123px);
+}
+
+.header-content__title {
+    z-index: 12;
+    position: relative;
+    font-size: 8vw;
+    line-height: 9vw;
+    font-weight: 800;
+}
+
+.header-content__text {
+    max-width: 530px;
+    margin: 30px 0 60px;
+}
+
+@mixin btn($color, $padding) {
+    padding: $padding;
+    background-color: $color;
+    color: $white;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.btn1 {
+    @include btn(red, 10px)
+}
+
+.btn2 {
+    @include btn(blue, 30px)
+}

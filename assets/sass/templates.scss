@@ -1,0 +1,31 @@
+%button_main {
+    border-radius: 126px;
+    background-color: $darkBlack;
+    color: $white;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $white;
+        color: $darkBlack;
+        box-shadow: 0px 0px 10px 0px rgba(107, 115, 123, 0.50);
+    }
+}
+
+%button_secondary {
+    border-radius: 126px;
+    text-decoration: underline;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $darkBlack;
+        color: $white;
+    }
+}
+
+%button_l {
+    padding: 20px 40px;
+}
+
+%button_m {
+    padding: 15px 30px;
+}

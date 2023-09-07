@@ -1,0 +1,44 @@
+@import "variables.scss";
+@import "templates.scss";
+@import "common.scss";
+@import "header.scss";
+@import "media.scss";
+
+html {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+*, 
+*:after,
+*:before {
+margin: 0;
+padding: 0;
+box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    color: $gray
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $darkBlack
+}

@@ -1,0 +1,14 @@
+.mainButtonL {
+    @extend %button_main;
+    @extend %button_l;
+}
+
+.mainButtonM {
+    @extend %button_main;
+    @extend %button_m;
+}
+
+.secondaryButtonL {
+    @extend %button_secondary;
+    @extend %button_l;
+}
