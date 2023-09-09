@@ -1,9 +1,11 @@
 %button_main {
     border-radius: 126px;
+    font-size: 1rem;
     background-color: $darkBlack;
     color: $white;
     transition: 0.3s;
     white-space: nowrap;
+    text-transform: uppercase;
     
     &:hover {
         background-color: $white;
@@ -13,14 +15,15 @@
 }
 
 %button_secondary {
+    text-transform: uppercase;
+    font-size: 1rem;
     border-radius: 126px;
     text-decoration: underline;
     white-space: nowrap;
     transition: 0.3s;
-
+    
     &:hover {
-        background-color: $darkBlack;
-        color: $white;
+        background-color: $white;
     }
 }
 
@@ -30,4 +33,10 @@
 
 %button_m {
     padding: 15px 30px;
+}
+
+%exploreCardIcon {
+    font-size: 150px;
+    color: $gray;
+    margin: 30px auto;
 }

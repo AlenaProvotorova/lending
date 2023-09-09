@@ -12,3 +12,32 @@
     @extend %button_secondary;
     @extend %button_l;
 }
+
+.mainInput {
+    background-color: $white;
+    width: 413px;
+    height: 70px;
+    padding: 0 30px;
+    border-radius: 65px;
+    box-shadow: 0px 12px 30px 0px rgba(205, 209, 214, 0.28);
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0px 12px 30px 0px rgba(97, 100, 104, 0.28);
+    }
+}
+
+.title {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 800;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+    margin-top: 90px;
+}
+

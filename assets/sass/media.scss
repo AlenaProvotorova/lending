@@ -1,5 +1,157 @@
-@media screen and (max-width: 1400px){
+@media screen and (min-width: 2000px){
+    html {
+        font-size: 20px;
+    }
+
+    .header-content  {
+        max-width: 95rem;
+    }
+}
+
+@media screen and (max-width: 1600px){
     .header-content__image {
-        right: 9%;
+       width: 50vw;
+       right: 0;
+    }
+
+    .cards {
+        grid-template-columns: 24rem;
+        justify-content: center;
+    }
+
+    .order {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .order__content {
+        margin: 40px;
+    }
+    
+    .instant {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    
+    .instant__content {
+        margin: 40px;
+    }
+    
+    .instant__img {
+        display: none;
+    }
+    
+    .footerInfo {
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerInfo__logo {
+        width: 100%;
+    }
+
+    .footerInfo__social-link {
+        font-size: 1rem;
+    }
+  
+    .footerInfo__social-text {
+        display: none;
+    }
+
+    .footerInfo__social-links {
+        grid-template-columns: repeat(2, 60px)
+    }
+
+    .footerBottom {
+        padding: 20px;
+    }
+
+    .mainInput {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .header__nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 820px){
+    html {
+        font-size: 10px;
+    }
+
+    .header-top  {
+        padding: 24px 40px 24px;
+    }
+
+    .header-content {
+        padding: 140px 40px 80px;
+        min-width: 540px;
+    }
+
+    .header-content__image {
+        width: 300px;
+     }
+
+    .cards {
+        grid-template-columns: 60%;
+        justify-content: center;
+    }
+
+    .bestCard__top {
+        grid-template-rows: 22px 105px;
+        gap: 8px 24px;
+    }
+
+    .bestCard__img {
+        top: -35px;
+        width: 120px;
+    }
+
+    .bestCard__title {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .bestCard__footer {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .explore {
+        padding-top: 50px;
+    }
+
+    .order__img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    html {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .header-top  {
+        padding: 24px 40px 24px;
+    }
+
+    .header-content {
+        padding: 140px 40px 80px;
+    }
+
+    .explore {
+        padding-top: 50px;
     }
 }

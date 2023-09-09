@@ -1,12 +1,18 @@
+.fixedHeader {
+    background-color: $lightGray;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
 .header {
     background-color: $lightGray;
-    padding-top: 24px;
 }
 
 .header-top {
-    max-width: 1240px;
-    padding: 0 100px;
-    width: 100%;
+    max-width: 77rem;
+    padding: 1.5rem 6.5rem 1.5rem;
     margin: 0 auto 0;
     display: flex;
     justify-content: space-between;
@@ -16,7 +22,7 @@
 .header__logo {
     width: 126px;
     height: 50px;
-    background: url('../img/logo.png') no-repeat;
+    z-index: 100;
 }
 
 .header__nav{
@@ -29,6 +35,7 @@
     border-radius: 50px;
     padding: 8px;
     margin-left: 8px;
+    font-size: 1rem;
     transition: 0.3s;
     
     &:hover {
@@ -37,20 +44,14 @@
     }
 }
 
-.header__link_active {
-    color: red
-}
-
 .header__cart {
     width: 56px;
     height: 56px;
     min-width: 56px;
     border-radius: 50px;
     background-color: $white;
-    background-image: url('../icons/cart.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 20px 0 32px;
+    font-size: 1.5rem;
+    margin: 0 1.2rem 0 2rem;
     transition: 0.3s;
     
     &:hover {
@@ -61,49 +62,31 @@
 .header-content__image {
     position: absolute;
     top: 0;
-    right: -5%;
+    right: -150px;
     bottom: 0;
-    background-size: contain;
-    background-image: url('../img/cup.png');
-    background-repeat: no-repeat;
-    width: 35vw;
+    width: 40vw;
     z-index: 1;
     transform: translateY(123px);
 }
 
 .header-content {
-    max-width: 1240px;
+    max-width: 77rem;
     margin: 0 auto 0;
-    padding: 123px 100px 131px;
+    padding: 11.2rem 6.5rem 8rem;
     position: relative;
 }
 
 .header-content__title {
     z-index: 12;
     position: relative;
-    font-size: 8vw;
-    line-height: 9vw;
+    font-size: $extraFontSize;
+    line-height: $extraFontSize + 1vw;
+    font-weight: 800;
 }
 
 .header-content__text {
     max-width: 530px;
-    margin: 30px 0 60px;
-}
-
-@mixin button($bgColor, $color: gray, $fs){
-    text-transform: uppercase;
-    padding: 20px 40px;
-    border: 1px solid $darkBlack;
-    background-color: $bgColor;
-    color: $color;
-    font-weight: 900;
-    font-size: $fs;
-}
-
-.btn1 {
-   @include button(red, green, 20px)
-}
-
-.btn2 {
-    @include button(yellow, black, 55px)
+    margin: 2rem 0 4rem;
+    z-index: 19;
+    position: relative;
 }

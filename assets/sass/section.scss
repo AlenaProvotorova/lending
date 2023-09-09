@@ -1,0 +1,272 @@
+// block explore 
+
+.explore {
+    text-align: center;
+    padding-top: 150px;
+    max-width: 77rem;
+    margin: 0 auto;
+}
+
+.explore__title {
+    margin-bottom: 24px;
+}
+
+.exploreCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 24px;
+    background: linear-gradient(152deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 30px 60px 0px rgba(163, 168, 178, 0.15);
+    transition: 0.5s;
+
+    &:hover {
+        transform: translateY(-10px);
+        cursor: pointer
+    }
+}
+
+.exploreCard__title {
+    text-align: left;
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 600;
+}
+
+.exploreCard__p {
+    text-align: left;
+    min-height: 50px
+}
+
+.exploreCard__icon {
+    @extend %exploreCardIcon;
+    text-align: center;
+    
+    .fa-ice-cream,
+    .fa-burger,
+    .fa-utensils {
+        font-size: inherit;
+    }
+}
+
+.exploreCard__btn {
+    min-width: 225px;
+}
+
+
+// block order
+
+.order {
+    display: flex;
+    align-items: center;
+    max-width: 77rem;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.order__img {
+    width: 807px;
+    height: 575px;
+}
+
+.order__title {
+    margin-bottom: 30px;
+}
+
+.order__btn {
+    margin-top: 60px;
+}
+
+// block best
+
+.best {
+    text-align: center;
+    padding-top: 150px;
+    max-width: 77rem;
+    margin: 0 auto;
+}
+
+.best__title {
+    margin-bottom: 24px;
+}
+
+.best__cards {
+    margin-top: 150px;
+}
+
+.bestCard {
+    position: relative;
+    text-align: left;
+    padding: 40px;
+    border-radius: 24px;
+    background: linear-gradient(152deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    box-shadow: 0px 30px 60px 0px rgba(163, 168, 178, 0.15);
+    transition: 0.5s;
+
+    &:hover {
+        transform: translateY(-10px);
+        cursor: pointer
+    }
+}
+
+.bestCard__img {
+    position: absolute;
+    top: -78px;
+    left: 0;
+}
+
+.bestCard__top {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 20px 180px;
+}
+
+.bestCard__img-container {
+    height: 228px;
+    width: 186px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.bestCard__subTitle {
+    color: $gray;
+}
+
+.bestCard__title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.bestCard__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.bestCard__price {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 28px; 
+}
+
+// block instant
+
+.instant {
+    display: flex;
+    align-items: center;
+    max-width: 77rem;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.instant__title {
+    margin-bottom: 30px;
+}
+
+.instant__btn {
+    margin-top: 60px;
+}
+
+//block footer
+
+.footer {
+    max-width: 77rem;
+    margin: 0 auto;
+    padding-top: 6.2rem;
+}
+
+.footerInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5.5rem;
+    padding-bottom: 4.4rem;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+
+.footerInfo__title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footerInfo__social-links {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 1.5rem;
+    align-items: center;
+    color: $gray
+}
+
+.footerInfo__social-link {
+    width: 60px;
+    height: 60px;
+    background-color: $white;
+    filter: drop-shadow(0px 12px 30px rgba(205, 209, 214, 0.28));
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $gray;
+    transition: 0.3s;
+    
+    &:hover {
+        filter: drop-shadow(0px 6px 5px rgba(133, 133, 133, 0.576));
+        transform: scale(1.1);
+    }
+    
+    .fa-brands {
+        font-size: inherit;
+    }
+}
+
+.footerInfo__social-text {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.footerInfo__logo {
+    width: 307px;
+    margin-bottom: 30px;
+}
+
+.footerInfo__p {
+    margin-bottom: 2.5rem;
+}
+
+.footerInfo__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footerInfo__btn {
+    margin-top: 2.5rem;
+}
+
+.footerBottom {
+    padding: 2.5rem 0;
+}
+
+.footerBottom__copyright {
+    color: $gray
+}
+
+.footerInfo__a {
+    .fa-arrow-right {
+        font-size: 12px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

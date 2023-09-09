@@ -1,3 +1,3 @@
 Запуск SASS
 
-sass --watch [путь к исходному файлу] [путь к выходному файлу]
+sass --watch assets/sass/index.scss assets/styles/index.css
